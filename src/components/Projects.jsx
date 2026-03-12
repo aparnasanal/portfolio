@@ -12,6 +12,7 @@ title: "LuxeStay",
 tag: "Frontend",
 img: luxe,
 repo: "https://github.com/aparnasanal/LuxeStay.git",
+demo: "https://aparnasanal.github.io/LuxeStay/",
 desc: "The project focuses on responsive design, modern UI layout, and user-friendly navigation for showcasing resort services and amenities.",
 tech: ["HTML","CSS","Bootstrap"],
 highlights:[
@@ -90,7 +91,8 @@ return (
 
 <div className="project-buttons">
   <a href={p.repo} target="_blank" rel="noreferrer" className="code">GitHub</a>
-</div>
+  <a href={p.demo} target="_blank" rel="noreferrer" className="demo">Demo</a>
+</div> 
 </div>
 
 </div>
