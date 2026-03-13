@@ -3,7 +3,9 @@ import '../assets/css/style.css'
 import bg from '../assets/images/bg.png'
 import { ReactTyped } from "react-typed";
 
-function Home() {
+function Home({user}) {
+
+
   return (
     <div id='home'>
       <div
@@ -17,7 +19,7 @@ function Home() {
 
         <div className="hero-content">
 
-          <h1 className="name">Aparna Sanal</h1>
+          <h1 className="name">{user.name}</h1>
 
           <p className="tagline">
             <i>
@@ -32,11 +34,17 @@ function Home() {
           </p>
 
           <div className="btn-container">
-            <button className="resume-btn">Resume</button>
+            <a href="#">
+              <button className="resume-btn">Resume</button>
+            </a>
+            
 
-            <button className="project-btn">
+            <a href="#projects">
+              <button className="project-btn">
               Projects
             </button>
+            </a>
+            
           </div>
 
         </div>

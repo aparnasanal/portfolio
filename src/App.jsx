@@ -9,10 +9,11 @@ import Contact from './components/Contact'
 import Foot from './components/Foot'
 
 function App() {
+  const user = {"name" : "Aparna Sanal"}
   return (
     <div>
       <NavBar></NavBar>
-      <Home></Home>
+      <Home user={user}></Home>
       <About></About>
       <Skills></Skills>
       <Projects></Projects>

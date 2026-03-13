@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <div>
-      <div className="nav-container">
+      <div className="nav-container" style={{position: "fixed"}}>
 
         <h1 style={{ color: "white", fontSize: "20px" }}>Aparna.</h1>
 

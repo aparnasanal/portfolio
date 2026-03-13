@@ -61,9 +61,9 @@ return (
 
 <div className="projects-grid">
 
-{projects.map((p,index)=>(
+{projects.map(p=>
 
-<div className="project-card" key={index}>
+<div className="project-card">
 
 <img src={p.img} width={'290px'} className="project-img"/>
 
@@ -78,15 +78,15 @@ return (
 <h6 className="mb-3">Highlights:</h6>
 
 <ul>
-{p.highlights.map((h,i)=>(
-<li key={i}>✓ {h} </li>
-))}
+{p.highlights.map(h=>
+<li>✓ {h}</li>
+)}
 </ul>
 
 <div className="tech-stack">
-{p.tech.map((t,i)=>(
-<span key={i}>{t}</span>
-))}
+{p.tech.map(t=>
+<span>{t}</span>
+)}
 </div>
 
 <div className="project-buttons">
@@ -94,10 +94,9 @@ return (
   <a href={p.demo} target="_blank" rel="noreferrer" className="demo">Demo</a>
 </div> 
 </div>
-
 </div>
 
-))}
+)}
 
 </div>
 <a href='#resume' className="scroll-down">ˬ</a>

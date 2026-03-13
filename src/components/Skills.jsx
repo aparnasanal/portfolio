@@ -28,8 +28,8 @@ const skills = [
 
       <div className="row g-4">
 
-        {skills.map((skill,index)=>(
-          <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
+        {skills.map(skill=>
+          <div className="col-lg-3 col-md-4 col-sm-6">
 
             <div className="card skill-card text-center p-4">
 
@@ -49,7 +49,7 @@ const skills = [
             </div>
 
           </div>
-        ))}
+        )}
 
 
       </div>
