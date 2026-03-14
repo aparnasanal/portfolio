@@ -35,7 +35,7 @@ function Home({user}) {
           </p>
 
           <div className="btn-container">
-            <a href="#">
+            <a href="/portfolio/AparnaSanal.pdf" download>
               <button className="resume-btn">Resume</button>
             </a>
             
