@@ -7,7 +7,8 @@ function Home({user}) {
 
 
   return (
-    <div id='home'>
+    <section id='home'>
+      <div>
       <div
         className="home-container"
         style={{
@@ -51,6 +52,8 @@ function Home({user}) {
         <a href='#about' className="scroll-down">ˬ</a>
       </div>
     </div>
+    </section>
+    
   )
 }
 

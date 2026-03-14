@@ -19,7 +19,7 @@ function App() {
       <Projects></Projects>
       <Resume></Resume>
       <Contact></Contact>
-      {/* <Foot></Foot> */}
+      <Foot></Foot>
     </div>
   )
 }

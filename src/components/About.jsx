@@ -3,7 +3,8 @@ import img1 from '../assets/images/about-img.png'
 
 function About() {
   return (
-    <div id='about' className='about-bg'>
+    <section id='about'>
+       <div className='about-bg'>
       <div className="about-container">
 
         <div className="headings">
@@ -37,6 +38,8 @@ function About() {
     <a href='#skills' className="scroll-down">ˬ</a>
       </div>
     </div>
+    </section>
+   
   )
 }
 

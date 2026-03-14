@@ -22,7 +22,8 @@ const skills = [
 ]
 
   return (
-    <div className="container py-5" id='skills'>
+    <section id='skills'>
+      <div className="container py-5">
 
       <h1 style={{fontWeight: "normal", fontSize: "40px"}} className="text-center text-white mb-5">Skills</h1>
 
@@ -56,6 +57,8 @@ const skills = [
       <a href='#projects' className="scroll-down">ˬ</a>
 
     </div>
+    </section>
+    
   )
 }
 

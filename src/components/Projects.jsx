@@ -13,7 +13,7 @@ tag: "Frontend",
 img: luxe,
 repo: "https://github.com/aparnasanal/LuxeStay.git",
 demo: "https://aparnasanal.github.io/LuxeStay/",
-desc: "The project focuses on responsive design, modern UI layout, and user-friendly navigation for showcasing resort services and amenities.",
+desc: "A responsive resort website designed to showcase luxury accommodation, amenities, and services. The project focuses on modern UI layout, smooth navigation, and an engaging visual experience for users.",
 tech: ["HTML","CSS","Bootstrap"],
 highlights:[
 "Responsive resort layout",
@@ -27,13 +27,12 @@ title: "Fitnex",
 tag: "Full Stack",
 img: fitnex,
 repo: "https://github.com/aparnasanal/Fitnex.git",
-desc: "A platform that helps users track workouts, manage fitness routines, and monitor progress. Built with modern web technologies and integrated backend functionality.",
+desc: "A fitness web application that helps users track workouts, follow exercise routines, and monitor progress. The platform integrates backend functionality to manage workout data and personalized suggestions.",
 tech: ["HTML","CSS","Bootstrap","Python","Django","SQLite"],
 highlights:[
 "Workout tracking",
 "AI diet engine",
 "AI workout suggestions",
-"Workout tutorials"
 ]
 },
 
@@ -42,10 +41,11 @@ title: "Cravery",
 tag: "Full Stack",
 img: cravery,
 repo: "https://github.com/aparnasanal/Cravery.git",
-desc: "A food delivery platform where users can browse menus, place orders, and manage food deliveries through an interactive interface with database integration.",
+desc: "A food delivery web platform where users can browse restaurant menus, place food orders through an interactive interface with database integration and backend functionality.",
 tech: ["HTML","CSS","Bootstrap","Python","Django","SQLite"],
 highlights:[
 "Food ordering system",
+"Browse restaurants",
 "Interactive UI",
 "Backend database"
 ]
@@ -54,8 +54,8 @@ highlights:[
 ];
 
 return (
-
-<div className="projects-section" id="projects">
+  <section id="projects">
+    <div className="projects-section">
 
 <h1 style={{fontWeight: "normal", fontSize: "40px"}} className="projects-title">Projects</h1>
 
@@ -91,7 +91,9 @@ return (
 
 <div className="project-buttons">
   <a href={p.repo} target="_blank" rel="noreferrer" className="code">GitHub</a>
-  <a href={p.demo} target="_blank" rel="noreferrer" className="demo">Demo</a>
+  {p.demo && (
+    <a href={p.demo} target="_blank" rel="noreferrer" className="demo">Demo</a>
+  )}
 </div> 
 </div>
 </div>
@@ -102,6 +104,9 @@ return (
 <a href='#resume' className="scroll-down">ˬ</a>
 
 </div>
+  </section>
+
+
 
 )
 

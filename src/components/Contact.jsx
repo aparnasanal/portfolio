@@ -11,7 +11,8 @@ function Contact() {
   ];
 
   return (
-    <div className="contact-container" id="contact">
+    <section id="contact">
+      <div className="contact-container">
 
       <div className="contact-left">
         <h2 className="contact-heading">Contact Me</h2>
@@ -40,6 +41,8 @@ function Contact() {
       <a href="#home" className="scroll-down">ˆ</a>
 
     </div>
+    </section>
+    
   );
 }
 

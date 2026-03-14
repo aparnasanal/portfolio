@@ -4,9 +4,10 @@ function NavBar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+
   return (
     <div>
-      <div className="nav-container" style={{position: "fixed"}}>
+      <div className="nav-container">
 
         <h1 style={{ color: "white", fontSize: "20px" }}>Aparna.</h1>
 
@@ -24,6 +25,7 @@ function NavBar() {
         </ul>
 
       </div>
+
     </div>
   );
 }

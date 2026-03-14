@@ -1,9 +1,10 @@
 import React from "react";
-import "../assets/css/style.css"; // We'll write CSS separately
+import "../assets/css/style.css"; 
 
 function Resume() {
   return (
-    <div className="resume-container text-white" id='resume'>
+    <section id='resume'>
+      <div className="resume-container text-white">
       <h1 style={{fontWeight: "normal", fontSize: "40px"}} className="text-center text-white mb-5 mt-5">Resume</h1>
 
       <div className="resume-columns">
@@ -43,6 +44,8 @@ function Resume() {
       </div>
       <a href='#contact' className="scroll-down">ˬ</a>
     </div>
+    </section>
+    
   );
 }
 
